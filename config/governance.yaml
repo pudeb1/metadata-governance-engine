@@ -1,0 +1,12 @@
+version: 1
+enterprise_domain_key: enterprise
+domains:
+  - key: enterprise
+    name: Enterprise
+    is_enterprise: true
+  - key: last_mile_delivery
+    name: Last-mile Delivery
+    parent: enterprise
+  - key: common_services
+    name: Common Services
+    parent: enterprise

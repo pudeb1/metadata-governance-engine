@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "metadata-governance-engine"
+version = "0.1.0"
+description = "Federated metadata governance for dbt and data platforms"
+authors = ["Metadata Governance Contributors"]
+readme = "README.md"
+packages = [{include = "metadata_governance", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pydantic = "^2.0"
+pyyaml = "^6.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0"
+
+[tool.poetry.scripts]
+mge = "metadata_governance.cli:main"
+
+[build-system]
+requires = ["poetry-core>=2.0.0"]
+build-backend = "poetry.core.masonry.api"
